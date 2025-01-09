@@ -3,7 +3,12 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "appName": {
-      "defaultValue": null,
+      "defaultValue"
+1. تثبيت Java Development Kit (JDK) Oracle
+
+*gamep-
+ Stack Overflow: ‎(link unavailable)‎
+
       "type": "string",
       "minLength": 5,
       "maxLength": 63,
@@ -13,7 +18,7 @@
     },
     "containerImage": {
       "type": "string",
-      "defaultValue": null,
+      "defaultValue"
       "metadata": {
         "description": "Container image to deploy"
       }
@@ -97,7 +102,6 @@
         "osType": "Linux"
       }
     }
-  ],
   "outputs": {
     "defaultHostName": {
       "value": "[reference(resourceId('Microsoft.ContainerInstance/containerGroups', parameters('appName'))).ipAddress.fqdn]",
